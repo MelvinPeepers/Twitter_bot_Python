@@ -6,9 +6,9 @@ gc = gspread.service_account('credentials.json')
 wks = gc.open("covid-tips").sheet1
 
 # Update a range of cells using the top left corner address
-# wks.update('A1', [[5, 5], [5, 5]])
 
 next_tweet = wks.acell('A2').value
+
 
 # post tweet through twitter API
 
